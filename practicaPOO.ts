@@ -41,12 +41,12 @@ class Participacion {
   ) {}
 
   mostrarDetalle(): void {
-    console.log(`🧑‍🎓 Participante: ${this.estudiante.nombre}`);
-    console.log(`🎯 Categoría: ${this.categoria.nombre}`);
-    console.log(`🏢 Laboratorio: ${this.laboratorio.nombre}`);
-    console.log(`💻 Computadora: ${this.computadora.id}`);
-    console.log(`📦 Software del laboratorio: ${this.laboratorio.softwareInstalado.map(s => s.nombre).join(', ')}`);
-    console.log(`📋 Software requerido: ${this.softwareRequerido.map(s => s.nombre).join(', ')}`);
+    console.log(` Participante: ${this.estudiante.nombre}`);
+    console.log(` Categoría: ${this.categoria.nombre}`);
+    console.log(` Laboratorio: ${this.laboratorio.nombre}`);
+    console.log(` Computadora: ${this.computadora.id}`);
+    console.log(` Software del laboratorio: ${this.laboratorio.softwareInstalado.map(s => s.nombre).join(', ')}`);
+    console.log(` Software requerido: ${this.softwareRequerido.map(s => s.nombre).join(', ')}`);
     console.log('='.repeat(50));
   }
 }
